@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ------------------TAGS & PROPS----------------- */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #222;
+
+    font-size: 1.4rem;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #fff;
+
+    background-image: url(../images/lite_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h2 {
+    font-weight: 400;
+}
+h1 {
+    font-weight: 500;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+a:hover {
+    color: #132C33;
+}
+a {
+    color: #fff;
+    text-decoration:none;
+}
+
+.lite_indigo {
+    color: #126E82;
+}
+.dark_indigo {
+    color: #132C33;
+}
+
+.font {
+    font-family: 'Righteous', cursive;
+}
+.float_left {
+    float: left;
+}
+.glass_lite {        
+    background: rgba( 18, 110, 130, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.glass_dark {
+    background: rgba( 18, 110, 130, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+/* ------------------NAVBAR----------------- */
+.navbar {
+    position: fixed;
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 15px 5%;
+    z-index: 1;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
+    background: rgba( 255, 255, 255, 0.30 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: right;
+}
+.navbar a {
+    display: inline-block;
+    padding: 0.5% 20px 5px;
+}
+.navbar img {
+    margin-right: 10px;
+}
+.cntct {
+    opacity:0.9;
+}
+.cntct:hover {
+    opacity: 1;
+}
+.home {
+    display: flex;
+    margin-top: 5px;
+}
+.slider {
+    position: absolute;
+    display: inline-block;
+    height: 5px;
+    left: calc(110px + 5%);
+    bottom: 15px;
+    right: 5%;
+    background-color: transparent;
+
+}
+.slide {
+    position: absolute;
+    opacity: 0.72;
+    height: 5px;
+    left: 20px;
+    right: 800px;
+    width: 66px;
+    /* right: 20px;
+    width: 97px; */
+    /* right: 160px;
+    width: 55px; */
+    /* right: 255px;
+    width: 47px; */
+    /* right: 342px;
+    width: 58px; */
+    bottom: 0;
+    transition: right 1s, width 1s;
+
+    border-radius: 5px;
+    background-color: #132C33;
+}
+
+/* ------------------BODY----------------- */
+.body_left {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    left: 10%;
+}
+
+.body_left img {
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+    z-index: -1;
+}
+
+.body_right {
+    float: right;
+    width: 55%;
+    height: 100%;
+    padding: 15% 10% 15% 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.body_right p {
+    font-size: 1.5rem;
+}
+
+.body_right h2 {
+    font-size: 2.25rem;
+    margin: 35px 
+}
+
+.body_right h1 {
+    font-size: 4rem;
+}
+
+/* ------------------SOCIAL BUTTONS----------------- */
+
+.soc {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.soc div{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 5px;
+}
+.face {
+    background-image: url(../images/face1.png);
+}
+.lkin {
+    background-image: url(../images/lkin1.png);
+}
+.insta {
+    background-image: url(../images/insta1.png);
+}
+
+
+.face:hover {
+    background-image: url(../images/face1-.png);
+}
+.lkin:hover {
+    background-image: url(../images/lkin1-.png);
+}
+.insta:hover {
+    background-image: url(../images/insta1-.png);
+}
+
+.img_mask {
+    mask:url("../images/Vector_lite.png");
+    mask-size: 100% 50%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask: url("../images/Vector_lite.png");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    width:80%;
+    height:70%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: 120px;
+    left: 50px;
+    z-index: -1;
+}

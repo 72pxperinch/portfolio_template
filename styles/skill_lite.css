@@ -1,0 +1,78 @@
+/* ------------------TAGS & PROPS----------------- */
+body {
+    padding: 0 10%;
+}
+/* ------------------NAVBAR----------------- */
+.navbar {
+    left: 0;
+}
+.slide {
+    left: auto;
+    right: 255px;
+    width: 47px;
+}
+
+/* ------------------BODY----------------- */
+.div {
+    height: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.div1 {
+    width: 10%;
+}
+
+.div2 {
+    flex-direction: column;
+    padding: 100px 50px 0;
+    width: 30%;
+    text-align: center;
+}
+.div2 > div {
+    width: 80%;
+    height: 10vh;
+    margin: 5vh 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(18, 110, 130, 0.4);
+}
+
+.div3 {
+    flex-direction: column;
+    padding: 100px 50px 0 0;
+    width: 60%;
+    text-align: center;
+}
+.div3 > div {
+    width: 100%;
+    height: 14vh;
+    margin: 3vh 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh;
+    background-color: rgba(18, 110, 130, 0.4);
+}
+
+.text {
+    position: relative;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.text::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    bottom: -20px;
+    right: -20px;
+    border-bottom: solid 3px #132C33;
+    border-right: solid 3px #132C33;
+}

@@ -1,0 +1,128 @@
+/* ------------------TAGS & PROPS----------------- */
+body {
+    padding: 0 10%;
+}
+/* ------------------NAVBAR----------------- */
+.navbar {
+    left: 0;
+}
+.slide {
+    left: auto;
+    right: 20px;
+    width: 97px;
+}
+
+/* ------------------BODY----------------- */
+.div {
+    display: inline-flex;
+    width: 49%;
+    height: 99vh;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0;
+    float: left;
+    flex-direction: column;
+    position: relative;
+}
+.div1 > div > img {
+    position: absolute;
+    z-index: -1;
+}
+.soc_cntct {
+    width: 50%;
+    margin: 23.5% 0 20% 24.4%;
+}
+.soc_cntct img {
+    width: 32%;
+    padding: 10px;
+}
+.soc_cntct img:hover {   
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+}
+.form {
+    width: 80%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+.form h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 5px;
+}
+.form textarea {
+    padding: 20px;
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(18, 110, 130, 0.5);
+    border: none;
+    resize: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    
+    
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.5);
+}
+.form input {
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+    height: 8vh;
+    border-radius: 10px;
+    background-color: rgba(18, 110, 130, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+
+    
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.5);
+}
+.form input::placeholder {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 50%;
+}
+.form input:focus {
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+}
+.form textarea:focus {
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+}
+.form textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.form button {
+    position: absolute;
+    bottom: 13%;
+    right: 15px;
+    background-color: #126E82;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;}
+button img {
+    width: 25px;
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
